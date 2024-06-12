@@ -15,7 +15,10 @@ public class FirebaseConfiguration {
     @Bean
     GoogleCredentials googleCredentials() throws IOException {
         GoogleCredentials googleCredentials = GoogleCredentials
-                .fromStream(new ClassPathResource(("paygo-v4-staging-firebase-adminsdk-i2py8-424d4764ec.json")).getInputStream());
+                .fromStream(new ClassPathResource((
+//                        "paygo-v4-staging-firebase-adminsdk-i2py8-424d4764ec.json"
+                        "atlas-staging-70912-firebase-adminsdk-aiy5c-f64ca56962.json"
+                )).getInputStream());
         return googleCredentials;
     }
 
